@@ -221,8 +221,8 @@
   @media (max-width: 420px) {
     .short .video-container .video {
         border-radius: 1rem;
-        width: 95%;
-        height: 170px;
-        transform: translate(3%,0);
+        width: 98%;
+        height: 210px;
+        transform: translate(1%,0);
     }
   }

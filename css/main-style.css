@@ -385,9 +385,10 @@ section {
 
 @media (max-width: 837px) {
   #footer .rights p {
-     color: #fff;
+  color: #fff;
   font-size: 18px;
   text-align: center;
+  padding-top: 30px;
   font-family: 'Cairo', sans-serif;
   }
 }

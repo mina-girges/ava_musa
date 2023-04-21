@@ -168,7 +168,7 @@ section {
 }
 
 #footer .box-container .box .share a img {
-  width: 40px;
+  width: 30px;
   margin-right: 50px;
   margin-top: 20px;
   transition: 0.5s all ease-in-out;
@@ -321,10 +321,9 @@ section {
 
 #footer .rights p {
   color: #fff;
-  font-size: 22px;
-  letter-spacing: 2px;
+  font-size: 18px;
   text-align: center;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 #footer .rights span {

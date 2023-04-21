@@ -385,8 +385,8 @@ section {
 
 @media (max-width: 837px) {
   #footer .rights p {
-  color: red;
-  font-size: 22px;
+  color: green;
+  font-size: 18px;
   text-align: center;
   padding-top: 60px;
   font-family: 'Cairo', sans-serif;

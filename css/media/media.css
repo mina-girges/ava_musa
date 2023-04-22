@@ -41,14 +41,14 @@
 
 
 #media .container .item-2 {
-    background-image: url(/data/media/ico-img/item-2.jpg);
+    background-image: url(data/media/ico-img/item-2.jpg);
     background-position: center;
     background-size: cover;
 }
 
 
 #media .container .item-3 {
-    background-image: url(/data/media/ico-img/item3.jpg);
+    background-image: url(../data/media/ico-img/item3.jpg);
     background-position: center;
     background-size: cover;
 }

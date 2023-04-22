@@ -41,14 +41,14 @@
 
 
 #media .container .item-2 {
-    background-image: url(data/media/ico-img/item-2.jpg);
+    background-image: url(../../data/media/ico-img/item-2.jpg);
     background-position: center;
     background-size: cover;
 }
 
 
 #media .container .item-3 {
-    background-image: url(../data/media/ico-img/item3.jpg);
+    background-image: url(../../data/media/ico-img/item3.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -57,19 +57,19 @@
 #media .container .item-4 {
     background-position: center;
     background-size: cover;
-    background-image: url(/data/media/ico-img/item-4.jpg);
+    background-image: url(../../data/media/ico-img/item-4.jpg);
 }
 
 #media .container .item-5 {
     background-position: center;
     background-size: cover;
-    background-image: url(/data/media/ico-img/item-5.jpg);
+    background-image: url(../../data/media/ico-img/item-5.jpg);
 }
 
 #media .container .item-6 {
     background-position: center;
     background-size: cover;
-    background-image: url(/data/media/ico-img/item-6.jpg);
+    background-image: url(../../data/media/ico-img/item-6.jpg);
 }
 
 #media .container .box {

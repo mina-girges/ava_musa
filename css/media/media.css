@@ -36,7 +36,7 @@
 #media .container .item-1 {
     background-position: center;
     background-size: cover;
-    background-image: url(/data/media/ico-img/item-1.jpg);
+    background-image: url(../../data/media/ico-img/item-1.jpg);
 }
 
 

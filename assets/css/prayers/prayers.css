@@ -1,0 +1,93 @@
+#agpeya h1 {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'El Messiri', sans-serif;
+}
+
+#agpeya h1 span {
+    color: rgb(25, 105, 139);
+}
+
+#agpeya h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+#agpeya h3 a {
+    color: #0707b1;
+}
+
+#agpeya h3 a:hover {
+    color: #ff0000;
+}
+
+#agpeya h2 {
+    font-size: 37px;
+    font-family: 'Cairo', sans-serif;
+    margin: 40px 70px 20px 0;
+}
+
+#agpeya h2 p {
+    font-size: 22px;
+}
+
+#agpeya h2 p a {
+    color: #0707b1;
+}
+
+#agpeya h2 p span {
+    color: #0707b1;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table .header-table {
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color: #0707b1;
+}
+
+.table .content-table {
+    font-size: 18px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media (max-width: 413px) {
+    #agpeya h2 {
+        font-size: 35px;
+    }
+
+    #agpeya .sec {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #agpeya h2 {
+        font-size: 30px;
+        font-family: 'Cairo', sans-serif;
+        margin: 40px 30px 0 0;
+    }
+
+    #agpeya h2 p {
+        font-size: 20px;
+    }
+}

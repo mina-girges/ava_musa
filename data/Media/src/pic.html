@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!--===== Meta Element =====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="صور, مسيحية, مسيحي, خلفيات, موبايل, كمبيوتر, قبطي, قدسين, ياسوع, الرب, يسوع, المسيح, مسيح, ابن الله, العذراء , العدراء ,العدرا , ام النور">
+    <!--===== Name Website =====-->
+    <title> الميديا | معرض الصور</title>
+    <!--===== Icon Website =====-->
+    <link rel="icon" href="../ico-img/item-1.png">
+    <!--===== Link File Css =====-->
+    <link rel="stylesheet" href="../../../assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="../../../assets/css/form.css" type="text/css">
+    <link rel="stylesheet" href="../../../assets/css/transitions.css" type="text/css">
+    <link rel="stylesheet" href="../../../assets/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="../../../assets/css/data/media_pic.css" type="text/css">
+    <link rel="stylesheet" href="../../../assets/css/salawat_nav_audio_download_next_but.css">
+    <!--===== js file link =====-->
+    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
+    <script src="../../../assets/js/main-script.js" defer></script>
+</head>
+
+<body>
+    <!--==========================
+        Css File          
+    =============================-->
+    <style>
+        .space {
+            margin-top: 9.5rem;
+        }
+
+        #pic .container {
+            display: grid;
+            -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 906px) {
+            #pic .container {
+                gap: 0rem;
+            }
+        }
+
+        @media (max-width: 879px) {
+            #pic .container {
+                margin-left: 10em;
+            }
+        }
+
+        @media (max-width: 686px) {
+            #pic .container {
+                transform: translate(20%, 0%);
+            }
+        }
+
+        @media (max-width: 600px) {
+            #pic .container {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 370px) {
+            #pic .container {
+                transform: translate(10%, 0%);
+
+            }
+        }
+
+        .card {
+            margin-left: 2rem;
+            margin-top: 8rem;
+            display: inline-block;
+            width: 30em;
+            height: 50em;
+            border-radius: 20px;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding: 1.8rem;
+            border: 2px solid #c3c6ce;
+            transition: 0.5s ease-out;
+            overflow: visible;
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            gap: 1.5em;
+            display: grid;
+        }
+
+        .down {
+            font-family: 'Cairo', sans-serif;
+            --width: 130px;
+            --height: 45px;
+            --tooltip-height: 35px;
+            --tooltip-width: 90px;
+            --gap-between-tooltip-to-button: 18px;
+            --button-color: #1163ff;
+            --tooltip-color: #fff;
+            width: var(--width);
+            height: var(--height);
+            background: var(--button-color);
+            position: relative;
+            text-align: center;
+            border-radius: 0.45em;
+            font-size: 18px;
+            margin-top: 6rem;
+            transition: background 0.3s;
+            bottom: 20%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, 50%);
+            transition: 0.3s ease-in;
+        }
+
+        .down::before {
+            position: absolute;
+            content: attr(data-tooltip);
+            width: var(--tooltip-width);
+            height: var(--tooltip-height);
+            background-color: var(--tooltip-color);
+            font-size: 1.3rem;
+            color: #111;
+            border-radius: .25em;
+            line-height: var(--tooltip-height);
+            bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+            left: calc(50% - var(--tooltip-width) / 2);
+        }
+
+        .down::after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: var(--tooltip-color);
+            left: calc(50% - 10px);
+            bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+        }
+
+        .down::after,
+        .down::before {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+        }
+
+        .card:hover .down {
+            opacity: 1;
+            transition: all 1.0s;
+        }
+
+        .text {
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-wrapper,
+        .text,
+        .icon {
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            color: #fff;
+        }
+
+        .text {
+            top: 0
+        }
+
+        .text,
+        .icon {
+            transition: top 0.5s;
+        }
+
+        .icon {
+            color: #fff;
+            top: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .down:hover {
+            background: #6c18ff;
+        }
+
+        .down:hover .text {
+            top: -100%;
+        }
+
+        .down:hover .icon {
+            top: 0;
+        }
+
+        .down:hover:before,
+        .down:hover:after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .down:hover:after {
+            bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+        }
+
+        .down:hover:before {
+            bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+        }
+
+        .card-details img {
+            width: 5rem;
+            bottom: 35px;
+            left: 18px;
+            position: absolute;
+        }
+
+        .text-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            bottom: 8px;
+            left: 12px;
+            position: absolute;
+            text-shadow: 5px 5px 5px rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .card:hover {
+            border-color: #d1d8de;
+            box-shadow: 5px 4px 18px 0 rgba(0, 0, 0, 0.9);
+            transform: scale(1.05);
+        }
+    </style>
+    <!--==========================
+        Header SECTION          
+    =============================-->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+            <img src="../../../assets/img/logo.png" alt="Ava Musa" />
+        </a>
+        <nav class="navbar">
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="#">الصفحة الرئيسية</a>
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="../../Bible/bible.html">الكتاب المقدس</a>
+            <a data-aos="zoom-in-left" data-aos-delay="600" href="../../Agpeya/agpeya.html">الاجبية</a>
+            <a data-aos="zoom-in-left" data-aos-delay="750" href="../../Characters/characters.html">سير القدسين</a>
+            <a data-aos="zoom-in-left" data-aos-delay="900" href="../../Media/media.html">الميديا</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="../../Kides/kides.html">خدمة الاطفال</a>
+        </nav>
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="#" class="btn"></a>
+    </header>
+    <!--==========================
+        PIC SECTION
+    =============================-->
+    <section data-aos="fade-right" data-aos-delay="300" class="space" id="pic">
+        <div class="container">
+            <!-------- pic-1 -------->
+            <div class="card" id="pic-1">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">العذراء مريم</p>
+                </div>
+                <div class="down" data-tooltip="Size: 395.5kb">
+                    <a download="السيدة العذراء مريم تحمل السيد المسيح" href="../modes/pic/pic-1.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-------- pic-2 -------->
+            <div class="card" id="pic-2">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">السيد المسيح</p>
+                </div>
+                <div class="down" data-tooltip="Size: 149.8kb">
+                    <a download="السيد المسيح" href="../modes/pic/pic-2.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-3 -------->
+            <div class="card" id="pic-3">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">السيد المسيح</p>
+                </div>
+                <div class="down" data-tooltip="Size: 144.9kb">
+                    <a download="السيد المسيح جالس علي العرش" href="../modes/pic/pic-3.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-4 -------->
+            <div class="card" id="pic-4">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">السيد المسيح</p>
+                </div>
+                <div class="down" data-tooltip="Size: 290.1kb">
+                    <a download="السيد المسيح" href="../modes/pic/pic-4.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-5 -------->
+            <div class="card" id="pic-5">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">البابا تواضروس الثاني</p>
+                </div>
+                <div class="down" data-tooltip="Size: 514.2kb">
+                    <a download="البابا تواضروس الثاني" href="../modes/pic/pic-5.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-6 -------->
+            <div class="card" id="pic-6">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">السيد المسيح</p>
+                </div>
+                <div class="down" data-tooltip="Size: 382.8kb">
+                    <a download="السيد المسيح" href="../modes/pic/pic-6.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-7 -------->
+            <div class="card" id="pic-7">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">الفردوس</p>
+                </div>
+                <div class="down" data-tooltip="Size: 61.6kb">
+                    <a download="الفردوس" href="../modes/pic/pic-7.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-8 -------->
+            <div class="card" id="pic-8">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">السيد المسيح</p>
+                </div>
+                <div class="down" data-tooltip="Size: 85.9kb">
+                    <a download="السيد المسيح" href="../modes/pic/pic-8.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-9 -------->
+            <div class="card" id="pic-9">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">البابا كيرلس السادس</p>
+                </div>
+                <div class="down" data-tooltip="Size: 485.6kb">
+                    <a download="البابا كيرلس السادس" href="../modes/pic/pic-9.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-------- pic-10 -------->
+            <div class="card" id="pic-10">
+                <div class="card-details">
+                    <img src="../../../assets/img/logo.png" alt="">
+                    <p class="text-title">انا الخاطىء</p>
+                </div>
+                <div class="down" data-tooltip="Size: 159.2kb">
+                    <a download="انا الخاطىء" href="../modes/pic/pic-10.jpg">
+                        <div class="button-wrapper">
+                            <div class="text">تنزيل</div>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em"
+                                    height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+        Footer SECTION
+    =============================-->
+    <footer id="footer">
+        <div class="box-container">
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <a href="#"><img src="../../../assets/img/logo.png" alt="Ava Musa" /></a>
+                <p class="title">
+                    تَوَكَّلْ عَلَى الرَّبِّ بِكُلِّ قَلْبِكَ، وَعَلَى فَهْمِكَ لاَ
+                    تَعْتَمِدْ
+                </p>
+                <div class="share">
+                    <a target="_blank" href="https://facebook.com/Ava.MusaBl"><img
+                            src="../../../assets/img/icon/facebook.png" alt="facebook" />Facebook</a>
+                    <a target="_blank" href="https://instagram.com/ava_musabl"><img
+                            src="../../../assets/img/icon/instagram.png" alt="instagram" />Instagram</a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCXU8VWz8bMrH_TamfkjBY0g"><img
+                            src="../../../assets/img/icon/youtube.png" alt="youtube" />Youtube</a>
+                </div>
+            </div>
+
+            <div class="box fast-link" data-aos="fade-up" data-aos-delay="300">
+                <h3>الوصول السريع</h3>
+                <a href="../../../index.html"><i class="fas fa-arrow-right"></i> الصفحة الرئسية</a>
+                <a href="../../Bible/bible.html"><i class="fas fa-arrow-right"></i> الكتاب المقدس</a>
+                <a href="../../Agpeya/agpeya.html"><i class="fas fa-arrow-right"></i> اﻷجبية</a>
+                <a href="../../Characters/characters.html"><i class="fas fa-arrow-right"></i> سير القدسين</a>
+                <a href="../../Media/media.html"><i class="fas fa-arrow-right"></i> الميديا</a>
+                <a href="../../Kides/kides.html"><i class="fas fa-arrow-right"></i> اﻷطفال</a>
+            </div>
+
+            <div class="box fast-link" data-aos="fade-up" data-aos-delay="300">
+                <h3>أسئلة شائعة</h3>
+                <a href="../../Questions-VS-Answers/FAQ_001/ما-هو-الفرق-بين-الطوائف.html"> ! ما هو الاختلاف بين
+                    الطوائف
+                    المسيحية</a>
+                <a href="../../Questions-VS-Answers/FAQ_002/لماذا-انت-مسيحي-ارثوذكسي.html">لماذا انت مسيحي أرثوذكسي
+                    ؟</a>
+                <a href="../../Questions-VS-Answers/FAQ_003/السيد-المسيح-والقيامة.html">. السيد المسيح و القيامة</a>
+                <a href="../../Questions-VS-Answers/FAQ_004/هل-نعبد-ثلاث-اله.html"> ! هل نعبد ثلاث اله</a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="notices">الابلاغ عن الاعطال و المحتوي الخاطىء</h3>
+                <form action="https://formspree.io/f/mpzeogwv" method="POST">
+                    <input type="text" autocomplete="on" name="text" class="input" placeholder="الاسم">
+                    <input type="text" autocomplete="on" name="email" class="input" placeholder="البريد الاكتروني">
+                    <textarea type="text" autocomplete="off" name="comment" class="input"
+                        placeholder="وصف المشكلة"></textarea>
+                    <input type="file" accept=".jpg, .jpeg, .png" name="file" class="input"
+                        placeholder="ارسل صورة للمشكلة">
+                    <button class="sub-but">
+                        <div type="submit">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="rights">
+            <p>تصميم و تنفيذ فريق <span>اﻷنبا موسي الاسود</span></p>
+        </div>
+    </footer>
+    <!--========================== 
+        Mix Screen (300px)
+    =============================-->
+    <article data-aos="fade-up" data-aos-delay="150" dir="rtl" id="screen-max">
+        <img src="../../../assets/img/logo.png">
+        <p> لدي موقع الانبا موسي الكثير لتقديمه بحيث نطلب منك توجيه جهازك إلى الوضع الرأسي أو العثور علي شاشة أكبر.
+            لكي
+            تستمتع بتجربة مميزة.</p>
+    </article>
+    <!--==========================
+        Script SECTION
+    =============================-->
+    <script src="../../../assets/js/salawat_audio_download_but.js"></script>
+    <script src="../../../assets/js/transitions.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+    </script>
+</body>
+
+</html>

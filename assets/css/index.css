@@ -1,0 +1,130 @@
+/*============================
+    MAIN SECTION
+============================*/
+#main-title {
+    padding-top: 50px;
+}
+
+#main-title .title-header p {
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 18px;
+}
+
+#main-title .title-secondary p {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+#main-title .title-website h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Kufam', sans-serif;
+}
+
+#main-title .title-website p {
+    text-align: center;
+    padding-top: 3px;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+/*============================
+    CONTENT SECTION
+============================*/
+.short .video-container .video {
+    border-radius: 1rem;
+    width: 50%;
+    transform: translate(50%,0);
+}
+/*============================
+    SERVICES SECTION
+============================*/
+.services .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    background: #000;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+}
+
+.services .box-container .box:hover {
+    border: 0.2rem solid #09edfe;
+}
+
+.services .box-container .box img {
+    width: 60px;
+    margin-bottom: 2px;
+}
+
+.services .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.services .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+    font-family: 'Cairo', sans-serif;
+}
+/*============================
+    MEDIA SECTION
+============================*/
+@media (max-width: 700px) {
+    .short .video-container .video {
+        border-radius: 1rem;
+        width: 63%;
+        height: 200px;
+        transform: translate(25%,0);
+    }
+  }
+
+  @media (max-width: 1240px) {
+    .short .video-container .video {
+        border-radius: 1rem;
+        width: 63%;
+        height: 350px;
+        transform: translate(25%,0);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .short .video-container .video {
+        border-radius: 1rem;
+        width: 63%;
+        height: 300px;
+        transform: translate(25%,0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .short .video-container .video {
+        border-radius: 1rem;
+        width: 90%;
+        height: 230px;
+        transform: translate(5%,0);
+    }
+  }
+
+  @media (max-width: 420px) {
+    .short .video-container .video {
+        border-radius: 1rem;
+        width: 98%;
+        height: 210px;
+        transform: translate(1%,0);
+    }
+  }

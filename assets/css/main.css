@@ -1,0 +1,329 @@
+/* ------------------------------------------------------------------------------
+	 Font
+-------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
+
+/*---
+font-family: 'Cairo', sans-serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Vazirmatn', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+---*/
+/*============================
+    ROOT SECTION
+============================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(230, 225, 225);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 5rem;
+}
+
+body {
+  background: #ababab;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+/*============================
+    HEADER SECTION
+============================*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5em 9%;
+}
+
+header .logo img {
+  width: 8em;
+}
+
+header .navbar a {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(210, 209, 209);
+  display: inline-block;
+  margin: 0 1em;
+  font-family: 'Cairo', sans-serif;
+}
+
+header .navbar a:hover {
+  color: rgb(41, 217, 213);
+}
+
+#menu-btn {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: none;
+}
+
+/*============================
+    FOOTER SECTION
+============================*/
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 3rem 9%;
+  margin-top: 10rem;
+}
+
+footer .box-container {
+  display: -ms-grid;
+  font-size: 62.5%;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+footer .box-container .box {
+  padding: 1rem 0;
+}
+
+footer .box-container .box a img {
+  width: 15rem;
+}
+
+footer .box-container .box p {
+  font-size: 16px;
+  color: rgb(240, 248, 255);
+}
+
+footer .box-container .box .share a {
+  width: 3rem;
+  color: rgb(171, 171, 171);
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+}
+
+footer .box-container .box .share a img {
+  width: 3rem;
+  margin-top: 2rem;
+  transform: translate(90%, 0);
+}
+
+footer .box-container .box h3 {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+footer .box-container .fast-link a {
+  color: rgb(170, 170, 170);
+  display: block;
+  transition: 0.5s all ease-in-out;
+  font-size: 18px;
+  padding: 1rem 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+footer .box-container .fast-link a:hover {
+  color: rgb(41, 217, 213);
+  transform: scaleX(1.1);
+}
+
+footer .box-container .box p i {
+  padding-right: .5rem;
+  color: rgb(41, 217, 213);
+}
+
+footer .box-container .box .links i:hover {
+  padding-left: 3rem;
+  transition: 0.5s all ease-in-out;
+}
+
+footer .box-container .box .links i {
+  margin-left: .5rem;
+  color: rgb(41, 217, 213);
+}
+
+footer .box-container .box .notices {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+footer .box-container .box .btn-12 {
+  padding: 1.8rem 2rem;
+  border: none;
+  background: none;
+  box-shadow: none;
+  line-height: 42px;
+  width: 100%;
+  transform: translate(20%, 0);
+}
+
+footer .rights p {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+}
+
+footer .rights span {
+  color: #29d9d5;
+}
+
+/*============================
+    MEDIA SCREEN SECTION
+============================*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 777px) {
+  header .navbar a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 837px) {
+  #footer .rights p {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    padding-top: 30px;
+  }
+}
+
+/*============================
+     MAX SCREEN
+============================*/
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: -200px 0 0 -150px;
+  text-align: center;
+  background-color: rgb(12, 12, 12);
+  padding-top: 6rem;
+
+}
+
+article img {
+  width: 13rem;
+}
+
+article p {
+  color: rgb(255, 255, 255);
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  padding: 3rem 5rem;
+}
+
+@media (max-width: 300px) {
+
+  section,
+  header,
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  article {
+    display: block;
+  }
+
+  body {
+    background-color: rgb(12, 12, 12);
+    ;
+  }
+}
+
+@media (min-width: 301px) {
+  article {
+    display: none;
+  }
+}

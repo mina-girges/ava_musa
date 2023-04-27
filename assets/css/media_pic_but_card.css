@@ -299,34 +299,3 @@
         margin-left: 10px;
     }
 }
-
-@media only screen and (max-width: 410px) {
-    .pagination .button{
-        padding: 10px 3px;
-        font-size: 16px;
-    }
-
-    .pagination .button--right {
-        font-size: 18px;
-        justify-content: center;
-        grid-column: 1;
-        transform: translate(27%, 0);
-        width: 80%;
-    }
-
-    .pagination .button--left {
-        font-size: 18px;
-        justify-content: center;
-        grid-column: 1;
-        transform: translate(-15%, 0);
-        width: 80%;
-        margin-left: 100px;
-    }
-
-    .pagination .button svg {
-        width: 60px;
-        height: 40px;
-        color: inherit;
-
-    }
-}

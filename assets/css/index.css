@@ -22,8 +22,7 @@
     text-align: center;
     padding-top: 30px;
     font-size: 40px;
-    letter-spacing: 2px;
-    font-family: 'Kufam', sans-serif;
+    font-family: 'nizar', sans-serif;
 }
 
 #main-title .title-website p {
@@ -32,6 +31,50 @@
     font-size: 20px;
     font-family: 'Cairo', sans-serif;
 }
+
+/*============================
+     SALA SAHMYA 
+============================*/
+
+#sahmya .box {
+    display: flex;
+    justify-content: center;
+}
+
+#sahmya .sala {
+    width: 40%;
+    border: 3px solid #000;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 1.5rem;
+    margin: 5rem;
+    text-align: center;
+}
+
+#sahmya .sala h3 {
+    font-family: 'ElMessiri';
+    background-color: rgb(128, 128, 128, .6);
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem 1rem;
+    color: #0707b1;
+}
+
+#sahmya .sala h3 i {
+    color: #000;
+}
+
+#sahmya .sala .col_2 {
+    color: #0707b1;
+    margin: 1rem;
+}
+
+/*============================
+    NEW & NEWS WEB
+============================*/
 
 #new_web hr {
     color: #111;
@@ -43,7 +86,7 @@
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgb(185, 182, 180);
-    font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+    font-family: 'NotoKufi';
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -166,7 +209,7 @@
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgb(185, 182, 180);
-    font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+    font-family: 'NotoKufi';
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -209,7 +252,7 @@
 #services .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
-    font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 #services .box-container .box p {
@@ -233,7 +276,7 @@
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgb(185, 182, 180);
-    font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+    font-family: 'NotoKufi';
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -292,18 +335,35 @@
 #important .box-container .card_1 h3 {
     font-size: 2rem;
     color: #B4DA8A;
-    font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+    font-family: 'NotoKufi';
 }
 
 #important .box-container .card_2 h3 {
     font-size: 2rem;
     color: #040504;
-    font-family: Noto Kufi Arabic, Tahoma, sans-serif;
+    font-family: 'NotoKufi';
 }
 
 /*============================
     MEDIA SECTION
 ============================*/
+@media (max-width: 420px) {
+    #main-title .title-website h1 {
+        font-size: 35px;
+    }    
+}
+
+@media (max-width: 900px) {
+    #sahmya .sala {
+        width: 90%;
+    }
+}
+
+@media (max-width: 370px) {
+    #sahmya .sala h3 {
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 750px) {
     #new_web .box {

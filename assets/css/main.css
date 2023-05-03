@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------------------
 	 Font
 -------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Kufam:ital,wght@0,500;1,400&display&=Ubuntu&display=swap&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@200;300;400&family=Vazirmatn:wght@200;300;400&display=swap');
 
 /*---
 font-family: 'Cairo', sans-serif;
@@ -50,6 +50,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #ababab;
   overflow-x: hidden;
+  font-family: 'Cairo', sans-serif;
 }
 
 section {
@@ -328,6 +329,3 @@ article p {
     display: none;
   }
 }
-
-
-
